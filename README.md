@@ -222,7 +222,7 @@ WHERE country LIKE '%INDIA%'
 ) as t4
 GROUP BY actor
 ORDER BY 2 desc
-'''
+```
 **Objective:** Identify the top 10 actors with the most appearances in Indian-produced movies.
 
 ### 15. Categorize Content Based on the Presence of 'Kill' and 'Violence' Keywords
