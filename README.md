@@ -114,12 +114,13 @@ ORDER BY SPLIT_PART(duration, ' ', 1)::INT DESC;
 **Objective:** Find the movie with the longest duration.
 
 ### 6. Find Content Added in the Last 5 Years
-'''sql
+```sql
 SELECT * 
 FROM netflix
 WHERE CONVERT(DATE, date_added, 107) >= DATEADD(YEAR, -5, GETDATE())
 ```
 **Objective:** Retrieve content added to Netflix in the last 5 years.
+
 ### 7. Find All Movies/TV Shows by Director 'Rajiv Chilaka'
 
 ```sql
@@ -194,7 +195,7 @@ WHERE director IS NULL;
 **Objective:** List content that does not have a director.
 
 ### 13. Find How Many Movies Actor 'Salman Khan' Appeared in the Last 10 Years
-```SQL
+```sql
 SELECT *
 FROM netflix 
 WHERE type= 'Movie' 
@@ -225,7 +226,7 @@ ORDER BY 2 desc
 **Objective:** Identify the top 10 actors with the most appearances in Indian-produced movies.
 
 ### 15. Categorize Content Based on the Presence of 'Kill' and 'Violence' Keywords
-```SQL
+```sql
 WITH new_table 
 AS
 (
